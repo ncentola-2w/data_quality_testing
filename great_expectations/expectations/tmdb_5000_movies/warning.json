@@ -1,0 +1,420 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "tmdb_5000_movies.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 5283,
+        "min_value": 4322
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 15
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "budget",
+          "homepage",
+          "id",
+          "original_language",
+          "original_title",
+          "overview",
+          "popularity",
+          "release_date",
+          "revenue",
+          "runtime",
+          "status",
+          "tagline",
+          "title",
+          "vote_average",
+          "vote_count"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "original_language"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_be_in_set",
+      "kwargs": {
+        "column": "original_language",
+        "value_set": [
+          "af",
+          "ar",
+          "cn",
+          "cs",
+          "da",
+          "de",
+          "el",
+          "en",
+          "es",
+          "fa",
+          "fr",
+          "he",
+          "hi",
+          "hu",
+          "id",
+          "is",
+          "it",
+          "ja",
+          "ko",
+          "ky",
+          "nb",
+          "nl",
+          "no",
+          "pl",
+          "ps",
+          "pt",
+          "ro",
+          "ru",
+          "sl",
+          "sv",
+          "ta",
+          "te",
+          "th",
+          "tr",
+          "vi",
+          "xx",
+          "zh"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_kl_divergence_to_be_less_than",
+      "kwargs": {
+        "column": "original_language",
+        "partition_object": {
+          "values": [
+            "af",
+            "ar",
+            "cn",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en",
+            "es",
+            "fa",
+            "fr",
+            "he",
+            "hi",
+            "hu",
+            "id",
+            "is",
+            "it",
+            "ja",
+            "ko",
+            "ky",
+            "nb",
+            "nl",
+            "no",
+            "pl",
+            "ps",
+            "pt",
+            "ro",
+            "ru",
+            "sl",
+            "sv",
+            "ta",
+            "te",
+            "th",
+            "tr",
+            "vi",
+            "xx",
+            "zh"
+          ],
+          "weights": [
+            0.00020820320632937748,
+            0.00041640641265875496,
+            0.0024984384759525295,
+            0.00041640641265875496,
+            0.0014574224443056423,
+            0.005621486570893191,
+            0.00020820320632937748,
+            0.9379554445138455,
+            0.006662502602540079,
+            0.0008328128253175099,
+            0.014574224443056423,
+            0.0006246096189881324,
+            0.003955860920258172,
+            0.00020820320632937748,
+            0.00041640641265875496,
+            0.00020820320632937748,
+            0.0029148448886112846,
+            0.0033312513012700396,
+            0.002290235269623152,
+            0.00020820320632937748,
+            0.00020820320632937748,
+            0.0008328128253175099,
+            0.00020820320632937748,
+            0.00020820320632937748,
+            0.00020820320632937748,
+            0.0018738288569643974,
+            0.00041640641265875496,
+            0.002290235269623152,
+            0.00020820320632937748,
+            0.0010410160316468874,
+            0.00041640641265875496,
+            0.00020820320632937748,
+            0.0006246096189881324,
+            0.00020820320632937748,
+            0.00020820320632937748,
+            0.00020820320632937748,
+            0.005621486570893191
+          ]
+        },
+        "threshold": 0.6
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "budget"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "budget",
+        "max_value": 1,
+        "min_value": -1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "budget",
+        "max_value": 380000001,
+        "min_value": 379999999
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "budget",
+        "max_value": 29045040.87528628,
+        "min_value": 29045038.87528628
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "budget",
+        "max_value": 15000001.0,
+        "min_value": 14999999.0
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": false,
+        "column": "budget",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              -1,
+              1
+            ],
+            [
+              779999,
+              780001
+            ],
+            [
+              14999999,
+              15000001
+            ],
+            [
+              39999999,
+              40000001
+            ],
+            [
+              114999999,
+              115000001
+            ]
+          ]
+        }
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "homepage",
+        "mostly": 0.256
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "homepage",
+        "min_value": 1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "tmdb_5000_movies",
+        "datasource": "data__dir",
+        "path": "/Users/ncentola/work/dna/competencies/testing/great_expectations/../data/tmdb_5000_movies.csv"
+      },
+      "created_at": 1618925949.10752,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "tmdb_5000_movies",
+          "datasource": "data__dir",
+          "path": "/Users/ncentola/work/dna/competencies/testing/great_expectations/../data/tmdb_5000_movies.csv"
+        },
+        "batch_markers": {
+          "ge_load_time": "20210420T133908.862557Z",
+          "pandas_data_fingerprint": "98e5f8d3252adebcb7cbe57833dd1e7e"
+        },
+        "batch_parameters": null,
+        "citation_date": "20210420T133909.131469Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "budget": {
+        "description": ""
+      },
+      "homepage": {
+        "description": ""
+      },
+      "id": {
+        "description": ""
+      },
+      "original_language": {
+        "description": ""
+      },
+      "original_title": {
+        "description": ""
+      },
+      "overview": {
+        "description": ""
+      },
+      "popularity": {
+        "description": ""
+      },
+      "release_date": {
+        "description": ""
+      },
+      "revenue": {
+        "description": ""
+      },
+      "runtime": {
+        "description": ""
+      },
+      "status": {
+        "description": ""
+      },
+      "tagline": {
+        "description": ""
+      },
+      "title": {
+        "description": ""
+      },
+      "vote_average": {
+        "description": ""
+      },
+      "vote_count": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.17",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}

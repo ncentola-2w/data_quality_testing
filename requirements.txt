@@ -1,0 +1,4 @@
+pydeequ
+great_expectations
+tensorflow-data-validation
+numpy==1.19.2
